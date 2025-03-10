@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Activities</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    
+    <h1>Activities in the Department of Mathematics and Computer Science</h1>
+    <p>The department organizes various academic and extracurricular activities to enhance learning and collaboration among students.</p>
+    
+    <h2>Department Activities</h2>
+    <ul>
+        <li>Programming Competitions</li>
+        <li>Mathematics Olympiad</li>
+        <li>Workshops and Seminars</li>
+        <li>Industrial Visits</li>
+        <li>Research and Innovation Projects</li>
+    </ul>
+    
+    <h2>Upcoming Events</h2>
+    <p>Stay tuned for updates on upcoming activities such as hackathons, guest lectures, and study groups.</p>
+    
+    <h2>Gallery</h2>
+    <img src="activity1.jpg" alt="Programming Competition">
+    <img src="activity2.jpg" alt="Mathematics Workshop">
+    <img src="activity3.jpg" alt="Industrial Visit">
+</body>
+</html>

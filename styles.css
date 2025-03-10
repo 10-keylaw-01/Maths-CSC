@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.bg-image {
+    position: fixed; /* Keeps it in place */
+    top: 10px; /* Start at the top */
+    right: 10px; /* Stick to the right */
+    width: 280px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 1; /* Fully visible */
+    z-index: 10; /* Ensure it's above other elements */
+    border-radius: 20px; /* Rounder corners */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: transform 1s ease-in-out, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Animation based on scrolling */
+@keyframes moveImage {
+    from {
+        transform: translateY(0) translateX(0);
+    }
+    to {
+        transform: translateY(80vh) translateX(-90vw); /* Moves to bottom left */
+    }
+}
+
+/* Apply animation when scrolling */
+body.scrolled .bg-image {
+    animation: moveImage 3s forwards;
+}
+
+
+main {
+    padding: 20px;
+    background: white;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative; /* Ensures proper layering */
+}
+
+/* Ordered list improvements */
+ol {
+    list-style-type: decimal; 
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+/* Fix spacing for list items */
+ol li {
+    margin-left: 5px; 
+    line-height: 1.5; 
+}
+
+h3 {
+    color: #0073e6;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

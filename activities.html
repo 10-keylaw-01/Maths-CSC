@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - SchOfScience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main>
+        <h1>Department Activities</h1>
+        <p>Our department offers various extracurricular and academic activities to enhance learning and innovation.</p>
+        
+        <h3>Upcoming Events</h3>
+        <ul>
+            <li>Mathematics Olympiad - March 15, 2025</li>
+            <li>Hackathon - April 10, 2025</li>
+            <li>Research Symposium - May 5, 2025</li>
+            <li>Industry Networking Day - June 20, 2025</li>
+        </ul>
+        
+        <h3>Clubs & Societies</h3>
+        <ul>
+            <li>Computer Science Club</li>
+            <li>Mathematics Society</li>
+            <li>Data Science Group</li>
+            <li>AI & Robotics Club</li>
+        </ul>
+        
+        <h3>Workshops & Seminars</h3>
+        <p>We organize workshops on various topics such as programming, AI, cybersecurity, and more.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Math & CS Department</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+git config --global user.name "10-keylaw-01"
+git config --global user.email "kelamwa2005@gmail.com"
